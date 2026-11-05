@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA JOAILLERIE | Haute Joaillerie Place Vendôme Antananarivo</title>
+    
+    <!-- Google Fonts Haute Couture & E-Commerce Grand Luxe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pearl: {
+                            DEFAULT: '#F8F9FA',
+                            light: '#FFFFFF',
+                            warm: '#FAF9F6',
+                            card: '#FFFFFF',
+                            border: '#E8E8E8'
+                        },
+                        charcoal: {
+                            DEFAULT: '#111827',
+                            soft: '#27272A',
+                            muted: '#6B7280'
+                        },
+                        gold: {
+                            DEFAULT: '#B8860B',
+                            light: '#F3E5AB',
+                            champagne: '#C5A059',
+                            metallic: '#BF953F',
+                            accent: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'luxe-soft': '0 4px 25px -4px rgba(0, 0, 0, 0.05), 0 2px 10px -2px rgba(0, 0, 0, 0.02)',
+                        'luxe-card': '0 20px 40px -10px rgba(184, 134, 11, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.04)',
+                        'luxe-hover': '0 25px 50px -12px rgba(184, 134, 11, 0.16), 0 4px 15px rgba(0, 0, 0, 0.05)',
+                        'gold-glow': '0 0 25px rgba(197, 160, 89, 0.35)',
+                        'inner-light': 'inset 0 1px 2px rgba(255, 255, 255, 0.8)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* ======================================================== */
+        /* DESIGN SYSTEM CLAIR & ULTRA-LUXE (Style Grand Magasin)    */
+        /* ======================================================== */
+
+        /* Fond clair perlé prestigieux façon marbre blanc de Carrare */
+        body {
+            background: linear-gradient(180deg, #FDFDFD 0%, #F8F9FB 40%, #F5F6F8 100%);
+            color: #1F2937;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection {
+            background: #F3E5AB;
+            color: #111827;
+        }
+
+        /* Vrai or champagne métallisé en typographie et reflets */
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #8E6913 0%, #C5A059 40%, #B8860B 70%, #6E4E07 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-champagne-bg {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 35%, #C5A059 70%, #AA7C11 100%);
+        }
+
+        /* Cartes & Panneaux en Verre Dépoli Lumineux */
+        .glass-panel-light {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 160, 89, 0.22);
+            box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+        }
+
+        .glass-panel-light:hover {
+            border-color: rgba(197, 160, 89, 0.45);
+            box-shadow: 0 20px 40px -8px rgba(184, 134, 11, 0.12), inset 0 1px 0 rgba(255, 255, 255, 1);
+        }
+
+        /* Halo atmosphérique doux */
+        .hero-light-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(243, 229, 171, 0.35) 0%, rgba(197, 160, 89, 0.08) 45%, transparent 70%);
+        }
+
+        .config-light-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(243, 229, 171, 0.3) 0%, rgba(197, 160, 89, 0.05) 50%, transparent 75%);
+        }
+
+        /* Sélecteurs 3D Métallisés */
+        .metal-btn, .cut-btn, .carat-btn {
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .metal-btn:hover, .cut-btn:hover, .carat-btn:hover {
+            border-color: rgba(197, 160, 89, 0.5);
+            box-shadow: 0 8px 20px -4px rgba(184, 134, 11, 0.15);
+        }
+
+        .metal-btn.active, .cut-btn.active, .carat-btn.active {
+            border-color: #B8860B !important;
+            background: linear-gradient(180deg, rgba(254, 249, 231, 0.9) 0%, #FFFFFF 100%) !important;
+            box-shadow: 0 8px 25px -4px rgba(184, 134, 11, 0.25), inset 0 0 0 1px #B8860B !important;
+        }
+
+        /* Médaillons Métalliques 3D biseautés */
+        .metal-swatch-jewel {
+            position: relative;
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 9999px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 
+                        inset 0 2px 3px rgba(255, 255, 255, 0.9), 
+                        inset 0 -2px 3px rgba(0, 0, 0, 0.15);
+            border: 1.5px solid rgba(255, 255, 255, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .metal-btn:hover .metal-swatch-jewel {
+            transform: scale(1.12);
+            box-shadow: 0 6px 15px rgba(184, 134, 11, 0.3), 
+                        inset 0 2px 3px rgba(255, 255, 255, 1);
+        }
+
+        /* Bouton CTA d'Or Lumineux avec Shimmer */
+        .btn-shine {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #C5A059 0%, #F5E29D 35%, #B8860B 75%, #8E6913 100%) !important;
+            color: #111827 !important;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 0 10px 25px -5px rgba(184, 134, 11, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .btn-shine:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -5px rgba(184, 134, 11, 0.45), inset 0 1px 3px rgba(255, 255, 255, 1);
+            filter: brightness(1.05);
+        }
+
+        .btn-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 30%;
+            height: 200%;
+            background: linear-gradient(
+                to right, 
+                rgba(255, 255, 255, 0) 0%, 
+                rgba(255, 255, 255, 0.75) 50%, 
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: rotate(30deg);
+            transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .btn-shine:hover::after {
+            left: 140%;
+        }
+
+        /* Scrollbar épurée */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F3F4F6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+    </style>
+</head>
+<body class="bg-[#F8F9FA] text-gray-800 antialiased selection:bg-[#F3E5AB]">
+
+    <!-- ======================================================== -->
+    <!-- BANDEAU HAUT ÉCRIN COMMERCIAL (Style Grand E-Commerce)   -->
+    <!-- ======================================================== -->
+    <div class="bg-gradient-to-r from-[#111827] via-[#1F2937] to-[#111827] text-white py-2 px-4 text-xs font-medium border-b border-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+            <div class="flex items-center space-x-3 text-[11px] tracking-wide">
+                <span class="bg-gold/20 text-[#F3E5AB] border border-gold/40 px-2 py-0.5 rounded-full text-[9px] uppercase font-bold tracking-widest">
+                    ✦ Offre Privilège
+                </span>
+                <span>Gravure sur-mesure & Écrin d'apparat en cuir d'agneau offerts</span>
+            </div>
+            <div class="flex items-center space-x-6 text-[10px] tracking-wider text-gray-300">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-gold"></i> Paris Place Vendôme</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-gold"></i> Certificats GIA Scellés</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-gold"></i> Conciergerie 7j/7</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======================================================== -->
+    <!-- 1. HEADER COMMERCIAL LUXE (Inspiré Structure E.Leclerc)  -->
+    <!-- ======================================================== -->
+    <header id="main-header" class="sticky top-0 left-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
+        
+        <!-- Étage 1 : Logo, Recherche Centrale & Actions Clients -->
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-3.5 flex items-center justify-between gap-4">
+            
+            <!-- Logo AURA JOAILLERIE -->
+            <a href="#" class="flex flex-col items-start group flex-shrink-0">
+                <span class="font-cinzel text-xl md:text-2xl font-bold tracking-[0.25em] gold-gradient-text transition-all duration-300 group-hover:brightness-110">
+                    AURA TANA
+                </span>
+                <span class="text-[8px] md:text-[9px] tracking-[0.4em] text-gray-400 -mt-1 font-sans font-medium">
+                    JOAILLERIE &bull; PARIS
+                </span>
+            </a>
+
+            <!-- Barre de Recherche Centrale Grand Magasin (Inspirée E.Leclerc) -->
+            <div class="hidden lg:flex items-center flex-1 max-w-xl mx-8">
+                <div class="relative w-full">
+                    <input type="text" id="site-search-input" placeholder="Rechercher un solitaire, une coupe de diamant, une alliance en or 18K..." class="w-full bg-gray-50 border border-gray-300 hover:border-gold/60 focus:border-gold rounded-full py-2.5 pl-11 pr-28 text-xs text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold/20 transition-all">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-xs"></i>
+                    <button class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-gradient-to-r from-[#B8860B] to-[#C5A059] text-white text-[10px] uppercase font-bold tracking-wider px-4 py-1.5 rounded-full hover:shadow-md transition-all">
+                        Explorer
+                    </button>
+                </div>
+            </div>
+
+            <!-- Actions Rapides & Panier Dynamique -->
+            <div class="flex items-center space-x-3 sm:space-x-5">
+                
+                <!-- Boutique Privée -->
+                <a href="#maison" class="hidden sm:flex items-center space-x-2 text-xs text-gray-600 hover:text-gold transition-colors py-1 px-2.5 rounded-lg hover:bg-gray-50">
+                    <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                    <div class="text-left leading-tight">
+                        <span class="block text-[9px] text-gray-400 uppercase tracking-widest font-semibold">Atelier Ouvert</span>
+                        <span class="text-[11px] font-medium text-gray-700">Salon Vendôme</span>
+                    </div>
+                </a>
+
+                <!-- Rendez-vous Privé -->
+                <button onclick="alert('Un conseiller privé de la Maison AURA vous accueillera en salon privé au 18 Place Vendôme.')" class="hidden md:flex items-center space-x-1.5 text-xs text-gray-700 hover:text-gold border border-gray-200 hover:border-gold/50 px-3 py-1.5 rounded-full transition-all bg-white shadow-sm">
+                    <i class="fa-regular fa-calendar-check text-gold text-xs"></i>
+                    <span class="font-medium text-[11px]">Prendre RDV</span>
+                </button>
+
+                <!-- Bouton Panier Dynamique (Cart Badge) -->
+                <button id="open-cart-btn" class="group flex items-center space-x-3 bg-gradient-to-r from-amber-50 to-orange-50 hover:from-amber-100 hover:to-orange-100 border border-gold/40 px-4 py-2 rounded-full transition-all duration-300 shadow-sm hover:shadow-md">
+                    <div class="relative">
+                        <i class="fa-solid fa-bag-shopping text-gold text-base group-hover:scale-110 transition-transform"></i>
+                        <span id="cart-badge-count" class="absolute -top-2 -right-2.5 bg-gradient-to-r from-[#B8860B] to-[#C5A059] text-white text-[9px] font-bold h-4 w-4 rounded-full flex items-center justify-center scale-100 transition-transform shadow">
+                            1
+                        </span>
+                    </div>
+                    <div class="text-left hidden sm:block">
+                        <span class="block text-[8px] uppercase tracking-wider text-gray-500 font-semibold leading-none">Mon Écrin</span>
+                        <span id="header-price-badge" class="font-cinzel text-xs text-gray-900 group-hover:text-gold font-bold tracking-wide">
+                            4 800 €
+                        </span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Étage 2 : "Rayons" & Navigation par Catégories (Style Leclerc E-Commerce) -->
+        <div class="border-t border-gray-100 bg-[#FAF9F6]">
+            <div class="max-w-7xl mx-auto px-4 md:px-8 py-2 flex items-center justify-between text-xs overflow-x-auto no-scrollbar">
+                <nav class="flex items-center space-x-8 text-[11px] uppercase tracking-[0.2em] font-medium text-gray-600 whitespace-nowrap">
+                    <a href="#scrolly-section" class="hover:text-gold transition-colors flex items-center gap-1.5 font-semibold text-gray-900">
+                        <i class="fa-solid fa-bars text-gold text-xs"></i> Collections Vendôme
+                    </a>
+                    <a href="#configurator" class="hover:text-gold transition-colors flex items-center gap-1 text-gold font-semibold">
+                        <i class="fa-solid fa-wand-magic-sparkles text-xs"></i> Configurateur 3D Direct
+                    </a>
+                    <a href="#scrolly-section" class="hover:text-gold transition-colors">
+                        Solitaires Diamants
+                    </a>
+                    <a href="#savoir-faire" class="hover:text-gold transition-colors">
+                        Savoir-Faire Artisanal
+                    </a>
+                    <a href="#maison" class="hover:text-gold transition-colors">
+                        Histoire & Salons
+                    </a>
+                </nav>
+
+                <!-- Badge Confiance E-Commerce -->
+                <div class="hidden lg:flex items-center space-x-4 text-[10px] text-gray-500 tracking-wider">
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-certificate text-gold"></i> Diamants Certifiés GIA</span>
+                    <span class="w-[1px] h-3 bg-gray-300"></span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-truck text-gold"></i> Livraison Sécurisée Offerte</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ======================================================== -->
+    <!-- BARRE DES PILLS & REASSURANCE COMMERCIALE                -->
+    <!-- ======================================================== -->
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-3 flex items-center gap-2 overflow-x-auto no-scrollbar text-xs">
+        <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 hover:border-gold px-3 py-1 rounded-full text-[11px] text-gray-700 shadow-sm cursor-pointer whitespace-nowrap">
+            <i class="fa-solid fa-crown text-gold text-[10px]"></i> Bagues de Fiançailles
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 hover:border-gold px-3 py-1 rounded-full text-[11px] text-gray-700 shadow-sm cursor-pointer whitespace-nowrap">
+            <i class="fa-solid fa-gem text-gold text-[10px]"></i> Taille Brillant 57 Facettes
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 hover:border-gold px-3 py-1 rounded-full text-[11px] text-gray-700 shadow-sm cursor-pointer whitespace-nowrap">
+            <i class="fa-solid fa-award text-gold text-[10px]"></i> Pureté D-FL Maximale
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 hover:border-gold px-3 py-1 rounded-full text-[11px] text-gray-700 shadow-sm cursor-pointer whitespace-nowrap">
+            <i class="fa-solid fa-coins text-gold text-[10px]"></i> Or 18K Recyclé Éthique
+        </span>
+        <span class="inline-flex items-center gap-1.5 bg-white border border-gray-200 hover:border-gold px-3 py-1 rounded-full text-[11px] text-gray-700 shadow-sm cursor-pointer whitespace-nowrap">
+            <i class="fa-solid fa-credit-card text-gold text-[10px]"></i> Paiement 3x / 4x sans frais
+        </span>
+    </div>
+
+
+    <!-- ======================================================== -->
+    <!-- 2. HERO SECTION "STICKY" 3D CANVAS & SCROLLYTELLING      -->
+    <!-- ======================================================== -->
+    <section id="scrolly-section" class="relative w-full h-[360vh]">
+        
+        <!-- Sticky Viewport Container Lumineux -->
+        <div class="sticky top-[86px] h-[calc(100vh-86px)] w-full overflow-hidden flex items-center justify-center bg-gradient-to-b from-[#FFFFFF] via-[#FAF9F6] to-[#F3F4F6]">
+            
+            <!-- Glow Atmosphérique Joaillerie Lumineux -->
+            <div class="absolute inset-0 hero-light-glow pointer-events-none"></div>
+
+            <!-- Décor Filigrane Architecturé -->
+            <div class="absolute inset-0 pointer-events-none flex justify-between px-8 md:px-16 opacity-30">
+                <div class="w-[1px] h-full bg-gradient-to-b from-transparent via-gold/40 to-transparent"></div>
+                <div class="w-[1px] h-full bg-gradient-to-b from-transparent via-gray-300 to-transparent hidden md:block"></div>
+                <div class="w-[1px] h-full bg-gradient-to-b from-transparent via-gold/40 to-transparent"></div>
+            </div>
+
+            <!-- 3D HTML5 Canvas Principal (Bague Diamant en Écrin Lumineux) -->
+            <canvas id="hero-canvas" class="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing z-10"></canvas>
+
+            <!-- Indicateur Flottant Parallaxe Souris -->
+            <div class="absolute top-8 left-8 md:left-14 z-20 pointer-events-none">
+                <span class="inline-flex items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-gray-600 bg-white/80 backdrop-blur-md border border-gray-200 px-3 py-1.5 rounded-full shadow-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold animate-ping"></span>
+                    Pièce Unique &bull; Édition N°01 Place Vendôme
+                </span>
+            </div>
+
+            <!-- Indicateur de Progression Scrollytelling (Vertical Bar) -->
+            <div class="absolute right-6 md:right-12 top-1/2 -translate-y-1/2 z-20 flex flex-col items-center space-y-4 pointer-events-none">
+                <div class="text-[10px] tracking-widest text-gold font-cinzel font-bold">01</div>
+                <div class="w-[3px] h-24 bg-gray-200 relative overflow-hidden rounded-full">
+                    <div id="scroll-progress-fill" class="w-full h-0 bg-gradient-to-b from-gold via-gold-light to-gold absolute top-0 left-0 transition-all duration-100"></div>
+                </div>
+                <div class="text-[10px] tracking-widest text-gray-400 font-cinzel font-semibold">03</div>
+            </div>
+
+            <!-- Textes Superposés Scrollytelling (Scroll-Linked Steps) -->
+            <div class="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-12 h-full flex items-center pointer-events-none">
+                
+                <!-- STEP 1 : L'Excellence du Diamant -->
+                <div id="scrolly-text-1" class="absolute left-6 md:left-12 max-w-lg transition-all duration-700 opacity-100 translate-y-0">
+                    <p class="text-gold text-xs uppercase tracking-[0.35em] mb-2 font-bold flex items-center gap-2">
+                        <span class="w-6 h-[1.5px] bg-gold"></span> Clarté Absolue D-FL Triple Ex
+                    </p>
+                    <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal leading-tight tracking-tight text-gray-900 mb-4">
+                        L'Excellence <br>
+                        <span class="italic font-light gold-gradient-text">du Diamant</span>
+                    </h1>
+                    <p class="text-gray-600 text-xs md:text-sm font-light leading-relaxed max-w-md">
+                        Une taille d’une précision micrométrique conçue pour capturer la moindre lueur et la disperser en un éclat hypnotique infini.
+                    </p>
+                    <div class="mt-8 flex items-center gap-4">
+                        <a href="#configurator" class="pointer-events-auto inline-flex items-center gap-3 text-xs tracking-[0.2em] uppercase font-bold text-gray-900 btn-shine px-7 py-3.5 rounded-full shadow-lg transition-all duration-300">
+                            Configurer ce Solitaire 3D <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STEP 2 : Mines Éthiques -->
+                <div id="scrolly-text-2" class="absolute right-6 md:right-16 text-right max-w-lg transition-all duration-700 opacity-0 translate-y-8">
+                    <p class="text-gold text-xs uppercase tracking-[0.35em] mb-2 font-bold flex items-center justify-end gap-2">
+                        Processus Kimberley Certifié <span class="w-6 h-[1.5px] bg-gold"></span>
+                    </p>
+                    <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal leading-tight tracking-tight text-gray-900 mb-4">
+                        Mines <br>
+                        <span class="italic font-light gold-gradient-text">Éthiques</span>
+                    </h2>
+                    <p class="text-gray-600 text-xs md:text-sm font-light leading-relaxed max-w-md ml-auto">
+                        Traçabilité absolue du brut à la monture. Chaque gemme est issue d'exploitations certifiées garantissant l'intégrité humaine et environnementale.
+                    </p>
+                    <div class="mt-6 flex justify-end gap-3 text-xs tracking-widest text-gray-700 font-medium">
+                        <span class="glass-panel-light px-3.5 py-1.5 text-[10px] uppercase rounded-full shadow-sm">Origine Botswana & Canada</span>
+                        <span class="glass-panel-light px-3.5 py-1.5 text-[10px] uppercase rounded-full shadow-sm">Zéro Émission Nette</span>
+                    </div>
+                </div>
+
+                <!-- STEP 3 : Savoir-Faire Artisanal -->
+                <div id="scrolly-text-3" class="absolute left-6 md:left-24 max-w-lg transition-all duration-700 opacity-0 translate-y-8">
+                    <p class="text-gold text-xs uppercase tracking-[0.35em] mb-2 font-bold flex items-center gap-2">
+                        <span class="w-6 h-[1.5px] bg-gold"></span> Ateliers Place Vendôme
+                    </p>
+                    <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal leading-tight tracking-tight text-gray-900 mb-4">
+                        Savoir-Faire <br>
+                        <span class="italic font-light gold-gradient-text">Artisanal</span>
+                    </h2>
+                    <p class="text-gray-600 text-xs md:text-sm font-light leading-relaxed max-w-md">
+                        Plus de 80 heures de sertissage manuel au microscope. Chaque griffe est sculptée sur mesure pour épouser la silhouette unique de votre pierre.
+                    </p>
+                    <div class="mt-6 flex items-center gap-6">
+                        <div>
+                            <div class="font-cinzel text-2xl text-gray-900 font-bold">100%</div>
+                            <div class="text-[9px] uppercase tracking-wider text-gray-500 font-medium">Fait Main à Paris</div>
+                        </div>
+                        <div class="w-[1px] h-8 bg-gray-300"></div>
+                        <div>
+                            <div class="font-cinzel text-2xl text-gold font-bold">GIA</div>
+                            <div class="text-[9px] uppercase tracking-wider text-gray-500 font-medium">Certificat Triple Ex</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center pointer-events-none text-center">
+                <span class="text-[9px] tracking-[0.3em] uppercase text-gray-500 mb-1.5 font-medium">Défilez pour explorer</span>
+                <div class="w-[1.5px] h-6 bg-gradient-to-b from-gold to-transparent animate-bounce"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ======================================================== -->
+    <!-- 3. CONFIGURATEUR DE BIJOUX INTERACTIF EN DIRECT          -->
+    <!-- ======================================================== -->
+    <section id="configurator" class="relative py-20 px-4 md:px-8 bg-white border-t border-b border-gray-200">
+        
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Fil d'Ariane Grand E-Commerce -->
+            <div class="flex items-center space-x-2 text-xs text-gray-500 mb-8">
+                <a href="#" class="hover:text-gold">Accueil</a>
+                <span>/</span>
+                <a href="#" class="hover:text-gold">Haute Joaillerie</a>
+                <span>/</span>
+                <a href="#" class="hover:text-gold">Bagues Solitaires</a>
+                <span>/</span>
+                <span class="text-gray-900 font-semibold">Configurateur 3D Sur-Mesure</span>
+            </div>
+
+            <!-- Split-View Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                
+                <!-- CÔTÉ GAUCHE : VUE 3D INTERACTIVE (Canvas 360° Drag & Controls) -->
+                <div class="lg:col-span-7 sticky top-28">
+                    <div class="relative w-full h-[480px] md:h-[620px] rounded-3xl overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-100 border border-gold/30 shadow-luxe-card flex items-center justify-center group">
+                        
+                        <!-- Glow Ambiant Lumineux -->
+                        <div class="absolute inset-0 config-light-glow pointer-events-none"></div>
+
+                        <!-- Canvas 3D Configurator -->
+                        <canvas id="config-canvas" class="w-full h-full cursor-grab active:cursor-grabbing z-10"></canvas>
+
+                        <!-- Badges Flottants de Réassurance -->
+                        <div class="absolute top-5 left-5 z-20 flex flex-col gap-2 pointer-events-none">
+                            <span class="inline-flex items-center gap-1.5 bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-full text-[10px] tracking-wider uppercase text-gray-800 font-semibold border border-gold/40 shadow-sm">
+                                <i class="fa-solid fa-arrows-rotate text-gold text-xs"></i> 3D Temps Réel &bull; Drag 360°
+                            </span>
+                            <span id="current-gem-badge" class="bg-white/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] tracking-wide uppercase text-gray-600 font-medium border border-gray-200 shadow-sm">
+                                Diamant Rond Brillant &bull; 1.00 ct
+                            </span>
+                        </div>
+
+                        <!-- Badge Disponibilité Immédiate -->
+                        <div class="absolute top-5 right-5 z-20 pointer-events-none text-right">
+                            <span class="inline-flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 text-emerald-800 text-[10px] font-bold px-3 py-1 rounded-full shadow-sm">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> En stock dans nos ateliers
+                            </span>
+                        </div>
+
+                        <!-- Commandes Flottantes de Zoom / Reset -->
+                        <div class="absolute bottom-5 right-5 z-20 flex items-center space-x-2">
+                            <button id="btn-zoom-in" title="Zoomer" class="w-10 h-10 rounded-full bg-white hover:bg-gold/10 border border-gray-200 hover:border-gold flex items-center justify-center text-gray-700 hover:text-gold transition-all shadow-md">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </button>
+                            <button id="btn-zoom-out" title="Dézoomer" class="w-10 h-10 rounded-full bg-white hover:bg-gold/10 border border-gray-200 hover:border-gold flex items-center justify-center text-gray-700 hover:text-gold transition-all shadow-md">
+                                <i class="fa-solid fa-minus text-xs"></i>
+                            </button>
+                            <button id="btn-reset-view" title="Recentrer" class="w-10 h-10 rounded-full bg-white hover:bg-gold/10 border border-gray-200 hover:border-gold flex items-center justify-center text-gray-700 hover:text-gold transition-all shadow-md">
+                                <i class="fa-solid fa-compass text-xs"></i>
+                            </button>
+                        </div>
+
+                        <!-- Signature Qualité -->
+                        <div class="absolute bottom-5 left-5 z-20 pointer-events-none">
+                            <span class="font-cinzel text-[10px] tracking-[0.3em] text-gray-500 uppercase font-semibold">Atelier Place Vendôme &bull; Certifié GIA</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CÔTÉ DROIT : PANNEAU UI DE PERSONNALISATION COMMERCIALE -->
+                <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+                    
+                    <div class="bg-white p-6 md:p-8 rounded-3xl border border-gray-200 shadow-luxe-card relative">
+                        
+                        <!-- Header Titre Produit & Avis E-Commerce -->
+                        <div class="mb-6 pb-6 border-b border-gray-100">
+                            <div class="flex items-center justify-between mb-1.5">
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-gold bg-amber-50 px-2.5 py-1 rounded-md border border-gold/30">
+                                    ✦ Haute Joaillerie Sur-Mesure
+                                </span>
+                                <span class="text-xs text-gray-400 font-mono">Réf: AUR-SOL-VND26</span>
+                            </div>
+                            
+                            <h2 class="font-serif text-3xl md:text-4xl text-gray-900 font-normal leading-tight">
+                                Solitaire <span class="italic font-light gold-gradient-text">Aura Impérial</span>
+                            </h2>
+
+                            <!-- Étoiles & Avis clients vérifiés (Style Leclerc / Grands Magasins) -->
+                            <div class="flex items-center gap-2 mt-2.5 text-xs">
+                                <div class="flex text-amber-400 text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="font-bold text-gray-900">4.9 / 5</span>
+                                <span class="text-gray-400">&bull;</span>
+                                <a href="#avis" class="text-gray-600 hover:text-gold underline underline-offset-2">184 avis vérifiés</a>
+                            </div>
+                        </div>
+
+                        <!-- 1. CHOIX DU MÉTAL PRÉCIEUX -->
+                        <div class="mb-8">
+                            <div class="flex justify-between items-center mb-3">
+                                <label class="text-[11px] uppercase tracking-[0.2em] text-gray-900 font-bold">
+                                    1. Choix du Métal Précieux
+                                </label>
+                                <span id="label-selected-metal" class="text-xs text-gold font-bold tracking-wide">
+                                    Or Jaune 18K
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-3">
+                                <!-- Or Jaune -->
+                                <button data-metal="yellow" class="metal-btn active group flex flex-col items-center p-3 rounded-2xl border border-gold bg-amber-50/60 transition-all duration-300">
+                                    <span class="metal-swatch-jewel" style="background: radial-gradient(circle at 35% 30%, #FFF9D2 0%, #F5D061 35%, #D4AF37 60%, #8A6414 100%);"></span>
+                                    <span class="text-[11px] font-bold text-gray-900">Jaune</span>
+                                    <span class="text-[9px] text-gray-500">18K</span>
+                                </button>
+
+                                <!-- Or Blanc -->
+                                <button data-metal="white" class="metal-btn group flex flex-col items-center p-3 rounded-2xl border border-gray-200 bg-gray-50/60 hover:border-gray-300 transition-all duration-300">
+                                    <span class="metal-swatch-jewel" style="background: radial-gradient(circle at 35% 30%, #FFFFFF 0%, #F1F3F5 35%, #D1D5DB 65%, #6B7280 100%);"></span>
+                                    <span class="text-[11px] font-bold text-gray-900">Blanc</span>
+                                    <span class="text-[9px] text-gray-500">18K</span>
+                                </button>
+
+                                <!-- Or Rose -->
+                                <button data-metal="rose" class="metal-btn group flex flex-col items-center p-3 rounded-2xl border border-gray-200 bg-gray-50/60 hover:border-gray-300 transition-all duration-300">
+                                    <span class="metal-swatch-jewel" style="background: radial-gradient(circle at 35% 30%, #FFE4D6 0%, #F9B896 35%, #E0A96D 65%, #8C4723 100%);"></span>
+                                    <span class="text-[11px] font-bold text-gray-900">Rose</span>
+                                    <span class="text-[9px] text-gray-500">18K</span>
+                                </button>
+
+                                <!-- Platine -->
+                                <button data-metal="platinum" class="metal-btn group flex flex-col items-center p-3 rounded-2xl border border-gray-200 bg-gray-50/60 hover:border-gray-300 transition-all duration-300">
+                                    <span class="metal-swatch-jewel" style="background: radial-gradient(circle at 35% 30%, #FFFFFF 0%, #E2E8F0 35%, #94A3B8 65%, #475569 100%);"></span>
+                                    <span class="text-[11px] font-bold text-gray-900">Platine</span>
+                                    <span class="text-[9px] text-gray-500">950</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 2. COUPE DU DIAMANT -->
+                        <div class="mb-8">
+                            <div class="flex justify-between items-center mb-3">
+                                <label class="text-[11px] uppercase tracking-[0.2em] text-gray-900 font-bold">
+                                    2. Taille Géométrique du Diamant
+                                </label>
+                                <span id="label-selected-cut" class="text-xs text-gold font-bold tracking-wide">
+                                    Rond Brillant (57 Facettes)
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-3">
+                                <!-- Rond Brillant -->
+                                <button data-cut="round" class="cut-btn active flex flex-col items-center p-3.5 rounded-2xl border border-gold bg-amber-50/60 transition-all duration-300">
+                                    <svg class="w-7 h-7 mb-2 text-gold fill-current" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                                        <polygon points="12,2 18,7 18,17 12,22 6,17 6,7" stroke="currentColor" stroke-width="0.8" fill="none"/>
+                                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="0.8" fill="none"/>
+                                    </svg>
+                                    <span class="text-xs font-bold text-gray-900">Rond</span>
+                                    <span class="text-[9px] text-gray-500 mt-0.5">Brillant Idéal</span>
+                                </button>
+
+                                <!-- Princesse (Square) -->
+                                <button data-cut="princess" class="cut-btn flex flex-col items-center p-3.5 rounded-2xl border border-gray-200 bg-gray-50/60 hover:border-gray-300 transition-all duration-300">
+                                    <svg class="w-7 h-7 mb-2 text-gray-600 fill-current" viewBox="0 0 24 24">
+                                        <rect x="4" y="4" width="16" height="16" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="0.8"/>
+                                        <line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="0.8"/>
+                                        <rect x="8" y="8" width="8" height="8" stroke="currentColor" stroke-width="0.8" fill="none"/>
+                                    </svg>
+                                    <span class="text-xs font-bold text-gray-900">Princesse</span>
+                                    <span class="text-[9px] text-gray-500 mt-0.5">Carré Moderne</span>
+                                </button>
+
+                                <!-- Poire (Pear) -->
+                                <button data-cut="pear" class="cut-btn flex flex-col items-center p-3.5 rounded-2xl border border-gray-200 bg-gray-50/60 hover:border-gray-300 transition-all duration-300">
+                                    <svg class="w-7 h-7 mb-2 text-gray-600 fill-current" viewBox="0 0 24 24">
+                                        <path d="M12 2 C8 8, 4 12, 4 16 A8 8 0 0 0 20 16 C20 12, 16 8, 12 2 Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                                        <circle cx="12" cy="15" r="3.5" stroke="currentColor" stroke-width="0.8" fill="none"/>
+                                    </svg>
+                                    <span class="text-xs font-bold text-gray-900">Poire</span>
+                                    <span class="text-[9px] text-gray-500 mt-0.5">Goutte Royale</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- 3. CARATAGE & POIDS DE LA PIERRE -->
+                        <div class="mb-8">
+                            <div class="flex justify-between items-center mb-3">
+                                <label class="text-[11px] uppercase tracking-[0.2em] text-gray-900 font-bold">
+                                    3. Poids de la Gemme
+                                </label>
+                                <span id="label-selected-carat" class="text-xs text-gold font-bold tracking-wide">
+                                    1.00 Carat (~6.5 mm)
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-3">
+                                <button data-carat="0.5" class="carat-btn flex flex-col items-center py-3 px-2 rounded-2xl border border-gray-200 bg-gray-50/60 hover:border-gray-300 transition-all duration-300">
+                                    <span class="font-cinzel text-sm text-gray-900 font-bold">0.50 ct</span>
+                                    <span class="text-[9px] text-gray-500 mt-0.5">Diamètre ~5.2 mm</span>
+                                    <span class="text-[10px] text-gold font-semibold mt-1">Dès 2 400 €</span>
+                                </button>
+
+                                <button data-carat="1.0" class="carat-btn active flex flex-col items-center py-3 px-2 rounded-2xl border border-gold bg-amber-50/60 transition-all duration-300">
+                                    <span class="font-cinzel text-sm text-gold font-bold">1.00 ct</span>
+                                    <span class="text-[9px] text-gray-500 mt-0.5">Diamètre ~6.5 mm</span>
+                                    <span class="text-[10px] text-gold font-bold mt-1">4 800 €</span>
+                                </button>
+
+                                <button data-carat="2.0" class="carat-btn flex flex-col items-center py-3 px-2 rounded-2xl border border-gray-200 bg-gray-50/60 hover:border-gray-300 transition-all duration-300">
+                                    <span class="font-cinzel text-sm text-gray-900 font-bold">2.00 ct</span>
+                                    <span class="text-[9px] text-gray-500 mt-0.5">Diamètre ~8.2 mm</span>
+                                    <span class="text-[10px] text-gold font-semibold mt-1">8 900 €</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- PRIX TOTAL, FINANCEMENT & BOUTON D'AJOUT -->
+                        <div class="pt-6 border-t border-gray-100 flex flex-col gap-4">
+                            <div class="flex items-baseline justify-between">
+                                <div>
+                                    <span class="text-[10px] uppercase tracking-wider text-gray-500 block font-semibold">Prix Total Atelier TTC</span>
+                                    <div class="flex items-baseline space-x-2">
+                                        <span id="config-price-display" class="font-cinzel text-3xl md:text-4xl font-extrabold gold-gradient-text">
+                                            4 800 €
+                                        </span>
+                                        <span class="text-xs text-gray-400 font-medium">TVA incluse</span>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-[10px] text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full font-bold">
+                                        Ou 4x sans frais de 1 200 €
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- CTA Ajouter au panier -->
+                            <button id="add-to-cart-btn" class="btn-shine w-full py-4 rounded-2xl font-cinzel font-bold text-xs uppercase tracking-[0.2em] shadow-lg flex items-center justify-center space-x-3">
+                                <i class="fa-solid fa-bag-shopping text-base"></i>
+                                <span>Ajouter à Mon Écrin Privé</span>
+                            </button>
+                        </div>
+
+                        <!-- Garanties Immédiates E-Commerce -->
+                        <div class="mt-5 pt-4 grid grid-cols-3 gap-2 text-center text-[10px] text-gray-600 border-t border-gray-100">
+                            <div class="flex flex-col items-center">
+                                <i class="fa-solid fa-file-shield text-gold text-sm mb-1"></i>
+                                <span class="font-medium">Certificat GIA Inclus</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <i class="fa-solid fa-truck text-gold text-sm mb-1"></i>
+                                <span class="font-medium">Livraison Blindée Gratuite</span>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <i class="fa-solid fa-rotate-left text-gold text-sm mb-1"></i>
+                                <span class="font-medium">Retours 30J & Remise à taille</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================================== -->
+    <!-- SECTION INTERMÉDIAIRE : NOTRE SAVOIR-FAIRE COMMERCIALE   -->
+    <!-- ======================================================== -->
+    <section id="savoir-faire" class="py-20 px-4 md:px-8 bg-[#FAF9F6] border-b border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-gold text-xs uppercase tracking-[0.35em] font-bold block mb-2">Excellence Joaillière</span>
+                <h3 class="font-serif text-3xl md:text-4xl text-gray-900 font-normal">Les Engagements de la Maison AURA</h3>
+                <p class="text-gray-600 text-xs md:text-sm mt-3 font-light">
+                    Directement de l'atelier Place Vendôme à votre écrin, sans intermédiaire superflu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-md group">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem text-lg"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl text-gray-900 mb-2 font-normal">Taille Brillant Idéale</h4>
+                    <p class="text-gray-600 text-xs leading-relaxed font-light">
+                        Chaque facette est calibrée à un angle strict de 40.75° pour assurer une réflexion interne totale de la lumière et une brillance phénoménale.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-md group">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-certificate text-lg"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl text-gray-900 mb-2 font-normal">Triple Certification GIA</h4>
+                    <p class="text-gray-600 text-xs leading-relaxed font-light">
+                        Nous ne sélectionnons que le top 1% mondial des diamants naturels : Cut Excellent, Polish Excellent, Symmetry Excellent, Zéro fluorescence négative.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-gray-200 hover:border-gold transition-all duration-300 shadow-sm hover:shadow-md group">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 border border-gold/30 flex items-center justify-center text-gold mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-feather text-lg"></i>
+                    </div>
+                    <h4 class="font-serif text-2xl text-gray-900 mb-2 font-normal">Serti Invisible Confort</h4>
+                    <p class="text-gray-600 text-xs leading-relaxed font-light">
+                        L'anneau est profilé en "courtisan galbé" pour une douceur absolue au porter quotidien, tout en maintenant la gemme avec 4 griffes en platine pur.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================================== -->
+    <!-- 4. PANIER LATÉRAL COMMERCE LUXE (DRAWER JS)              -->
+    <!-- ======================================================== -->
+    <div id="cart-drawer-overlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+    <div id="cart-drawer" class="fixed top-0 right-0 w-full max-w-md h-full bg-white border-l border-gold/40 z-50 transform translate-x-full transition-transform duration-500 ease-out flex flex-col justify-between shadow-2xl">
+        
+        <!-- Header Drawer -->
+        <div class="p-6 border-b border-gray-100 flex items-center justify-between bg-[#FAF9F6]">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-bag-shopping text-gold text-lg"></i>
+                <div>
+                    <h3 class="font-cinzel text-sm uppercase tracking-[0.2em] text-gray-900 font-bold">Votre Écrin AURA</h3>
+                    <span class="text-[10px] text-gray-500">Création personnalisée sur-mesure</span>
+                </div>
+            </div>
+            <button id="close-cart-btn" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gold/20 text-gray-500 hover:text-gold transition-colors flex items-center justify-center">
+                <i class="fa-solid fa-xmark text-sm"></i>
+            </button>
+        </div>
+
+        <!-- Corps du Drawer : Récapitulatif précis -->
+        <div class="p-6 flex-1 overflow-y-auto space-y-6">
+            
+            <!-- Carte Produit Personnalisé -->
+            <div class="bg-gray-50 p-4 rounded-2xl border border-gray-200 flex space-x-4 shadow-sm">
+                <!-- Miniature Graphique -->
+                <div class="w-20 h-20 rounded-xl bg-white border border-gold/30 flex items-center justify-center relative overflow-hidden flex-shrink-0 shadow-inner">
+                    <div id="cart-item-preview-glow" class="w-12 h-12 rounded-full bg-amber-100 filter blur-sm absolute"></div>
+                    <i id="cart-item-cut-icon" class="fa-solid fa-gem text-gold text-2xl relative z-10 animate-pulse"></i>
+                </div>
+
+                <!-- Détails -->
+                <div class="flex-1">
+                    <div class="flex justify-between items-start">
+                        <h4 class="font-serif text-base text-gray-900 font-bold">Solitaire Aura Impérial</h4>
+                        <button id="cart-remove-item" title="Supprimer" class="text-gray-400 hover:text-red-500 text-xs transition-colors p-1">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </button>
+                    </div>
+                    <p class="text-[10px] text-gold font-bold tracking-wider uppercase mt-0.5">Façonné Place Vendôme</p>
+
+                    <!-- Spécifications Clés -->
+                    <div class="mt-3 space-y-1 text-[11px] text-gray-600">
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Métal :</span>
+                            <span id="cart-metal-name" class="font-semibold text-gray-900">Or Jaune 18K</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Coupe :</span>
+                            <span id="cart-cut-name" class="font-semibold text-gray-900">Rond Brillant</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Poids :</span>
+                            <span id="cart-carat-name" class="font-semibold text-gray-900">1.00 Carat</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-400">Gravure offerte :</span>
+                            <span class="font-semibold text-gold italic">"AURA PARIS"</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 pt-2 border-t border-gray-200 flex justify-between items-baseline">
+                        <span class="text-[10px] text-gray-500 font-semibold uppercase">Prix Pièce :</span>
+                        <span id="cart-item-price" class="font-cinzel text-gold font-bold text-base">4 800 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inclusions Prestigieuses Offertes -->
+            <div class="bg-amber-50/50 p-4 rounded-2xl border border-gold/30 space-y-2">
+                <span class="text-[10px] uppercase tracking-wider text-gold font-bold block mb-1">Prestations d'Excellence Incluses :</span>
+                <div class="flex items-center gap-2 text-[11px] text-gray-700">
+                    <i class="fa-solid fa-check text-gold text-xs"></i> Écrin en cuir d'agneau & boîte laquée
+                </div>
+                <div class="flex items-center gap-2 text-[11px] text-gray-700">
+                    <i class="fa-solid fa-check text-gold text-xs"></i> Certificat officiel GIA scellé
+                </div>
+                <div class="flex items-center gap-2 text-[11px] text-gray-700">
+                    <i class="fa-solid fa-check text-gold text-xs"></i> Mise à taille offerte sous 60 jours
+                </div>
+            </div>
+
+            <!-- Code Privilège E-Commerce -->
+            <div class="flex gap-2">
+                <input type="text" placeholder="Code privilège ou carte cadeau" class="flex-1 bg-gray-50 border border-gray-200 px-3.5 py-2 rounded-xl text-xs text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gold">
+                <button class="bg-gray-100 hover:bg-gold/20 text-gray-700 text-xs px-3.5 py-2 rounded-xl font-semibold transition-colors">
+                    Appliquer
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Footer Drawer : Total & Checkout -->
+        <div class="p-6 border-t border-gray-200 bg-[#FAF9F6] space-y-4">
+            <div class="flex justify-between items-baseline">
+                <div>
+                    <span class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold block">Sous-total</span>
+                    <span class="text-xs text-emerald-700 font-semibold">Livraison sécurisée offerte</span>
+                </div>
+                <span id="cart-subtotal" class="font-cinzel text-3xl font-extrabold gold-gradient-text">
+                    4 800 €
+                </span>
+            </div>
+
+            <button onclick="alert('Commande initiée avec succès. Un joaillier de la Maison AURA prendra contact avec vous dans l\'heure.')" class="btn-shine w-full py-4 rounded-2xl font-cinzel font-bold text-xs uppercase tracking-[0.2em] shadow-lg transition-all">
+                Procéder au Paiement Sécurisé
+            </button>
+
+            <p class="text-center text-[10px] text-gray-500 tracking-wider">
+                <i class="fa-solid fa-lock text-gold mr-1"></i> Chiffrement Bancaire Haute Sécurité 256-bit
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- ======================================================== -->
+    <!-- 5. FOOTER COMMERCIAL LUXE (Grand E-Commerce)             -->
+    <!-- ======================================================== -->
+    <footer id="maison" class="bg-white text-gray-600 pt-16 pb-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            
+            <!-- Les 4 Piliers de Réassurance (Style E.Leclerc / Luxe) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-12 border-b border-gray-200">
+                <div class="flex items-start space-x-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 border border-gold/30 flex items-center justify-center text-gold flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved text-lg"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-xs text-gray-900 uppercase tracking-wider mb-1">Paiement 100% Sécurisé</h5>
+                        <p class="text-[11px] text-gray-500 leading-relaxed font-light">CB, Visa, Mastercard, virement bancaire garanti ou conciergerie.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 border border-gold/30 flex items-center justify-center text-gold flex-shrink-0">
+                        <i class="fa-solid fa-file-shield text-lg"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-xs text-gray-900 uppercase tracking-wider mb-1">Certificat GIA Scellé</h5>
+                        <p class="text-[11px] text-gray-500 leading-relaxed font-light">Numéro de registre gravé au laser micrométrique sur le rondiste.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 border border-gold/30 flex items-center justify-center text-gold flex-shrink-0">
+                        <i class="fa-solid fa-truck-fast text-lg"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-xs text-gray-900 uppercase tracking-wider mb-1">Transport Privé Offert</h5>
+                        <p class="text-[11px] text-gray-500 leading-relaxed font-light">Livraison sous scellé avec garde assermenté sur rendez-vous.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 border border-gold/30 flex items-center justify-center text-gold flex-shrink-0">
+                        <i class="fa-solid fa-infinity text-lg"></i>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-xs text-gray-900 uppercase tracking-wider mb-1">Garantie Éternelle</h5>
+                        <p class="text-[11px] text-gray-500 leading-relaxed font-light">Nettoyage, vérification des griffes et polissage offerts à vie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonnes Principales -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 py-12 border-b border-gray-200 text-xs">
+                
+                <!-- Logo & Adresse -->
+                <div class="md:col-span-4">
+                    <span class="font-cinzel text-2xl font-bold tracking-[0.25em] gold-gradient-text block mb-3">
+                        AURA JOAILLERIE
+                    </span>
+                    <p class="text-xs text-gray-500 leading-relaxed mb-5 font-light">
+                        Maison de Haute Joaillerie fondée au 18 Place Vendôme, 75001 Paris.<br>
+                        Créateur d'alliances d'exception et de diamants d'investissement.
+                    </p>
+                    <div class="flex space-x-3 text-gray-500">
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gold hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gold hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-pinterest-p text-xs"></i></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gold hover:text-white flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation Liens -->
+                <div class="md:col-span-2 space-y-2.5">
+                    <span class="font-bold text-gray-900 uppercase tracking-wider block mb-3">Nos Rayons</span>
+                    <p><a href="#" class="hover:text-gold transition-colors">Bagues de Fiançailles</a></p>
+                    <p><a href="#" class="hover:text-gold transition-colors">Alliances Or 18K</a></p>
+                    <p><a href="#" class="hover:text-gold transition-colors">Solitaires Vendôme</a></p>
+                    <p><a href="#" class="hover:text-gold transition-colors">Diamants Certifiés GIA</a></p>
+                </div>
+
+                <div class="md:col-span-2 space-y-2.5">
+                    <span class="font-bold text-gray-900 uppercase tracking-wider block mb-3">Services Privilège</span>
+                    <p><a href="#" class="hover:text-gold transition-colors">Prendre RDV en Salon</a></p>
+                    <p><a href="#" class="hover:text-gold transition-colors">Baguier Virtuel Gratuit</a></p>
+                    <p><a href="#" class="hover:text-gold transition-colors">Vérification de Registre GIA</a></p>
+                    <p><a href="#" class="hover:text-gold transition-colors">Conciergerie Privée</a></p>
+                </div>
+
+                <!-- Newsletter Cercle Privilège -->
+                <div class="md:col-span-4">
+                    <span class="font-bold text-gray-900 uppercase tracking-wider block mb-2">Le Cercle Privilège AURA</span>
+                    <p class="text-xs text-gray-500 mb-4 font-light">Recevez les sélections privées de gemmes d'exception et invitations aux salons Vendôme.</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Bienvenue dans le Cercle AURA.'); this.reset();" class="flex gap-2">
+                        <input type="email" required placeholder="Votre adresse email personnelle" class="bg-gray-50 border border-gray-200 px-4 py-2.5 rounded-xl text-xs text-gray-800 placeholder-gray-400 focus:outline-none focus:border-gold flex-1">
+                        <button type="submit" class="btn-shine text-gray-900 font-cinzel font-bold text-xs tracking-wider px-5 rounded-xl shadow-sm">
+                            Rejoindre
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Mentions Légales & Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-400 tracking-wider">
+                <p>&copy; 2026 AURA JOAILLERIE PARIS. Tous droits réservés.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-gold transition-colors">Mentions Légales</a>
+                    <a href="#" class="hover:text-gold transition-colors">Données Personnelles</a>
+                    <a href="#" class="hover:text-gold transition-colors">Conditions Générales de Vente</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- ======================================================== -->
+    <!-- MOTEURS 3D INTERACTIFS EN JS NATIF (CANVAS HTML5)        -->
+    <!-- ADAPTÉ AU THÈME CLAIR LUXUEUX AVEC OMBRES DE CONTACT     -->
+    <!-- ======================================================== -->
+    <script>
+        /**
+         * MOTEUR 3D NATIVE JS POUR AURA JOAILLERIE (MODE CLAIR LUXE)
+         * - Rendu mathématique matriciel 3D sans dépendance externe lourde
+         * - Ombre de contact au sol réaliste pour ancrer le bijou dans l'espace
+         * - Métaux précieux avec ombrage et spécularité adaptés sur fond blanc nacré
+         * - Réfraction cristalline éclatante et dispersion prismatique
+         */
+
+        // PALETTE DES MÉTAUX PRÉCIEUX SUR FOND CLAIR
+        const METAL_THEMES = {
+            yellow: {
+                name: "Or Jaune 18K",
+                baseColor: [218, 178, 65],       // Or chaud lumineux
+                specularColor: [255, 255, 240],  // Reflet blanc éclatant
+                ambientColor: [140, 105, 30],
+                surcharge: 0
+            },
+            white: {
+                name: "Or Blanc 18K",
+                baseColor: [205, 215, 225],      // Reflet argenté blanc précieux
+                specularColor: [255, 255, 255],
+                ambientColor: [120, 130, 140],
+                surcharge: 150
+            },
+            rose: {
+                name: "Or Rose 18K",
+                baseColor: [225, 160, 125],      // Cuivre rosé élégant
+                specularColor: [255, 245, 235],
+                ambientColor: [150, 85, 60],
+                surcharge: 200
+            },
+            platinum: {
+                name: "Platine 950",
+                baseColor: [180, 195, 205],      // Platine pur bleuté
+                specularColor: [255, 255, 255],
+                ambientColor: [95, 105, 115],
+                surcharge: 600
+            }
+        };
+
+        const BASE_CARAT_PRICES = {
+            0.5: 2400,
+            1.0: 4800,
+            2.0: 8900
+        };
+
+        // ÉTAT GLOBAL DU CONFIGURATEUR
+        const configState = {
+            metal: 'yellow',
+            cut: 'round',
+            carat: 1.0,
+            calculatedPrice: 4800
+        };
+
+        // --- MATHS 3D VECTORIELLES ET MATRICIELLES ---
+        class Vector3 {
+            constructor(x = 0, y = 0, z = 0) {
+                this.x = x;
+                this.y = y;
+                this.z = z;
+            }
+            clone() { return new Vector3(this.x, this.y, this.z); }
+            add(v) { return new Vector3(this.x + v.x, this.y + v.y, this.z + v.z); }
+            sub(v) { return new Vector3(this.x - v.x, this.y - v.y, this.z - v.z); }
+            mult(s) { return new Vector3(this.x * s, this.y * s, this.z * s); }
+            dot(v) { return this.x * v.x + this.y * v.y + this.z * v.z; }
+            cross(v) {
+                return new Vector3(
+                    this.y * v.z - this.z * v.y,
+                    this.z * v.x - this.x * v.z,
+                    this.x * v.y - this.y * v.x
+                );
+            }
+            length() { return Math.sqrt(this.dot(this)); }
+            normalize() {
+                const len = this.length();
+                return len > 0 ? this.mult(1 / len) : new Vector3();
+            }
+        }
+
+        // ROTATIONS D'UN VECTEUR
+        function rotateX(v, angle) {
+            const cos = Math.cos(angle);
+            const sin = Math.sin(angle);
+            return new Vector3(v.x, v.y * cos - v.z * sin, v.y * sin + v.z * cos);
+        }
+
+        function rotateY(v, angle) {
+            const cos = Math.cos(angle);
+            const sin = Math.sin(angle);
+            return new Vector3(v.x * cos + v.z * sin, v.y, -v.x * sin + v.z * cos);
+        }
+
+        function rotateZ(v, angle) {
+            const cos = Math.cos(angle);
+            const sin = Math.sin(angle);
+            return new Vector3(v.x * cos - v.y * sin, v.x * sin + v.y * cos, v.z);
+        }
+
+        // ========================================================
+        // GÉNÉRATEURS DE GÉOMÉTRIE 3D DU BIJOU
+        // ========================================================
+
+        // 1. ANNEAU (Torus Haute Joaillerie avec Griffe / Chaton)
+        function createRingGeometry(metalType) {
+            const vertices = [];
+            const faces = [];
+            const ringRadius = 1.6;     // Rayon principal de l'anneau
+            const tubeRadius = 0.22;    // Épaisseur de la tige d'or
+            const segmentsU = 28;       // Résolution angulaire circonférence
+            const segmentsV = 10;       // Résolution profil section
+
+            // Sommets du Tore
+            for (let i = 0; i < segmentsU; i++) {
+                const u = (i / segmentsU) * Math.PI * 2;
+                const factorY = (Math.cos(u) > 0.85) ? 0.8 : 1.0; 
+
+                for (let j = 0; j < segmentsV; j++) {
+                    const v = (j / segmentsV) * Math.PI * 2;
+                    const r = ringRadius + tubeRadius * Math.cos(v);
+                    const x = r * Math.cos(u);
+                    const y = (r * Math.sin(u) - 0.25) * factorY;
+                    const z = tubeRadius * Math.sin(v) * 1.2;
+                    vertices.push(new Vector3(x, y, z));
+                }
+            }
+
+            // Faces quadrilatères scindées en triangles
+            for (let i = 0; i < segmentsU; i++) {
+                const nextI = (i + 1) % segmentsU;
+                for (let j = 0; j < segmentsV; j++) {
+                    const nextJ = (j + 1) % segmentsV;
+                    const idx1 = i * segmentsV + j;
+                    const idx2 = nextI * segmentsV + j;
+                    const idx3 = nextI * segmentsV + nextJ;
+                    const idx4 = i * segmentsV + nextJ;
+
+                    faces.push({ indices: [idx1, idx2, idx3], isMetal: true, metalType: metalType });
+                    faces.push({ indices: [idx1, idx3, idx4], isMetal: true, metalType: metalType });
+                }
+            }
+
+            // Griffes de maintien du diamant
+            const prongCount = 4;
+            const prongRadius = 0.75;
+            for (let p = 0; p < prongCount; p++) {
+                const angle = (p / prongCount) * Math.PI * 2 + Math.PI / 4;
+                const px = Math.cos(angle) * prongRadius;
+                const pz = Math.sin(angle) * prongRadius;
+                
+                const bIdx = vertices.length;
+                vertices.push(new Vector3(px * 0.8, 1.0, pz * 0.8));       // Base griffe
+                vertices.push(new Vector3(px, 1.85, pz));                   // Haut griffe
+                vertices.push(new Vector3(px * 0.9 + 0.08, 1.85, pz * 0.9));
+                
+                faces.push({ indices: [bIdx, bIdx + 1, bIdx + 2], isMetal: true, metalType: metalType, isProng: true });
+            }
+
+            return { vertices, faces };
+        }
+
+        // 2. DIAMANT 3D (ROND BRILLANT, PRINCESSE, POIRE)
+        function createDiamondGeometry(cutType, caratScale = 1.0) {
+            const vertices = [];
+            const faces = [];
+            const s = (0.9 + (caratScale - 0.5) * 0.35);
+
+            if (cutType === 'round') {
+                const numSides = 12;
+                const tableHeight = 2.45 * s;
+                const tableRadius = 0.72 * s;
+                const girdleHeight = 2.05 * s;
+                const girdleRadius = 1.15 * s;
+                const culetHeight = 1.05 * s;
+
+                // Colette (Bas)
+                vertices.push(new Vector3(0, culetHeight, 0));
+
+                // Rondiste
+                for (let i = 0; i < numSides; i++) {
+                    const ang = (i / numSides) * Math.PI * 2;
+                    vertices.push(new Vector3(Math.cos(ang) * girdleRadius, girdleHeight, Math.sin(ang) * girdleRadius));
+                }
+
+                // Table
+                for (let i = 0; i < numSides; i++) {
+                    const ang = (i / numSides) * Math.PI * 2;
+                    vertices.push(new Vector3(Math.cos(ang) * tableRadius, tableHeight, Math.sin(ang) * tableRadius));
+                }
+
+                const centerTableIdx = vertices.length;
+                vertices.push(new Vector3(0, tableHeight, 0));
+
+                // Pavillon
+                for (let i = 0; i < numSides; i++) {
+                    const next = (i + 1) % numSides;
+                    faces.push({ indices: [0, 1 + next, 1 + i], isDiamond: true, facetName: 'pavilion' });
+                }
+
+                // Couronne
+                for (let i = 0; i < numSides; i++) {
+                    const next = (i + 1) % numSides;
+                    const g1 = 1 + i;
+                    const g2 = 1 + next;
+                    const t1 = 1 + numSides + i;
+                    const t2 = 1 + numSides + next;
+                    faces.push({ indices: [g1, g2, t2], isDiamond: true, facetName: 'crown' });
+                    faces.push({ indices: [g1, t2, t1], isDiamond: true, facetName: 'crown' });
+                }
+
+                // Table
+                for (let i = 0; i < numSides; i++) {
+                    const next = (i + 1) % numSides;
+                    const t1 = 1 + numSides + i;
+                    const t2 = 1 + numSides + next;
+                    faces.push({ indices: [centerTableIdx, t1, t2], isDiamond: true, facetName: 'table' });
+                }
+
+            } else if (cutType === 'princess') {
+                const tableH = 2.45 * s;
+                const girdleH = 2.05 * s;
+                const culetH = 1.05 * s;
+                const tW = 0.75 * s;
+                const gW = 1.15 * s;
+
+                // 0: Colette
+                vertices.push(new Vector3(0, culetH, 0));
+
+                // 1..4: Coins Rondiste
+                vertices.push(new Vector3(-gW, girdleH, -gW));
+                vertices.push(new Vector3(gW, girdleH, -gW));
+                vertices.push(new Vector3(gW, girdleH, gW));
+                vertices.push(new Vector3(-gW, girdleH, gW));
+
+                // 5..8: Coins Table
+                vertices.push(new Vector3(-tW, tableH, -tW));
+                vertices.push(new Vector3(tW, tableH, -tW));
+                vertices.push(new Vector3(tW, tableH, tW));
+                vertices.push(new Vector3(-tW, tableH, tW));
+
+                // 9: Centre Table
+                vertices.push(new Vector3(0, tableH, 0));
+
+                for (let i = 1; i <= 4; i++) {
+                    const next = (i % 4) + 1;
+                    faces.push({ indices: [0, next, i], isDiamond: true, facetName: 'pavilion' });
+                }
+
+                for (let i = 1; i <= 4; i++) {
+                    const next = (i % 4) + 1;
+                    const t1 = i + 4;
+                    const t2 = next + 4;
+                    faces.push({ indices: [i, next, t2], isDiamond: true, facetName: 'crown' });
+                    faces.push({ indices: [i, t2, t1], isDiamond: true, facetName: 'crown' });
+                }
+
+                for (let i = 1; i <= 4; i++) {
+                    const next = (i % 4) + 1;
+                    faces.push({ indices: [9, i + 4, next + 4], isDiamond: true, facetName: 'table' });
+                }
+
+            } else if (cutType === 'pear') {
+                const numSides = 14;
+                const tableH = 2.45 * s;
+                const girdleH = 2.05 * s;
+                const culetH = 1.05 * s;
+
+                vertices.push(new Vector3(0, culetH, -0.15 * s));
+
+                for (let i = 0; i < numSides; i++) {
+                    const theta = (i / numSides) * Math.PI * 2;
+                    const rad = (0.75 + 0.45 * Math.sin(theta * 0.5)) * s;
+                    const px = Math.cos(theta) * rad * 0.95;
+                    const pz = Math.sin(theta) * rad * 1.35;
+                    vertices.push(new Vector3(px, girdleH, pz));
+                }
+
+                for (let i = 0; i < numSides; i++) {
+                    const theta = (i / numSides) * Math.PI * 2;
+                    const rad = (0.45 + 0.28 * Math.sin(theta * 0.5)) * s;
+                    const px = Math.cos(theta) * rad * 0.95;
+                    const pz = Math.sin(theta) * rad * 1.35;
+                    vertices.push(new Vector3(px, tableH, pz));
+                }
+
+                const centerTableIdx = vertices.length;
+                vertices.push(new Vector3(0, tableH, 0.1 * s));
+
+                for (let i = 0; i < numSides; i++) {
+                    const next = (i + 1) % numSides;
+                    faces.push({ indices: [0, 1 + next, 1 + i], isDiamond: true, facetName: 'pavilion' });
+                }
+
+                for (let i = 0; i < numSides; i++) {
+                    const next = (i + 1) % numSides;
+                    const g1 = 1 + i;
+                    const g2 = 1 + next;
+                    const t1 = 1 + numSides + i;
+                    const t2 = 1 + numSides + next;
+                    faces.push({ indices: [g1, g2, t2], isDiamond: true, facetName: 'crown' });
+                    faces.push({ indices: [g1, t2, t1], isDiamond: true, facetName: 'crown' });
+                }
+
+                for (let i = 0; i < numSides; i++) {
+                    const next = (i + 1) % numSides;
+                    const t1 = 1 + numSides + i;
+                    const t2 = 1 + numSides + next;
+                    faces.push({ indices: [centerTableIdx, t1, t2], isDiamond: true, facetName: 'table' });
+                }
+            }
+
+            return { vertices, faces };
+        }
+
+        function generateJewelryModel(metalType, cutType, caratScale) {
+            const ring = createRingGeometry(metalType);
+            const diamond = createDiamondGeometry(cutType, caratScale);
+
+            const offset = ring.vertices.length;
+            const combinedVertices = ring.vertices.concat(diamond.vertices);
+            const combinedFaces = ring.faces.slice();
+
+            for (let f of diamond.faces) {
+                combinedFaces.push({
+                    indices: f.indices.map(idx => idx + offset),
+                    isDiamond: true,
+                    facetName: f.facetName
+                });
+            }
+
+            return { vertices: combinedVertices, faces: combinedFaces };
+        }
+
+        // ========================================================
+        // RENDU 3D OPTIMISÉ POUR MODE CLAIR AVEC OMBRE PORTÉE
+        // ========================================================
+        class JewelryRenderer {
+            constructor(canvasId, options = {}) {
+                this.canvas = document.getElementById(canvasId);
+                this.ctx = this.canvas.getContext('2d');
+                this.options = Object.assign({
+                    interactive: true,
+                    isHero: false,
+                    fov: 500
+                }, options);
+
+                this.model = generateJewelryModel(configState.metal, configState.cut, configState.carat);
+
+                this.rotX = 0.25;
+                this.rotY = -0.4;
+                this.rotZ = 0;
+                this.scale = 85;
+                this.targetRotX = 0.25;
+                this.targetRotY = -0.4;
+                this.targetScale = 85;
+
+                this.isDragging = false;
+                this.lastMouseX = 0;
+                this.lastMouseY = 0;
+                this.mouseSpeedX = 0;
+                this.mouseSpeedY = 0;
+
+                this.lightDir = new Vector3(0.5, 0.8, 0.6).normalize();
+
+                this.sparkles = [];
+                for (let i = 0; i < 6; i++) {
+                    this.sparkles.push({
+                        vertexIdx: 0,
+                        size: 0,
+                        maxSize: 8 + Math.random() * 12,
+                        life: Math.random(),
+                        speed: 0.02 + Math.random() * 0.03,
+                        rotation: Math.random() * Math.PI
+                    });
+                }
+
+                this.resize();
+                window.addEventListener('resize', () => this.resize());
+
+                if (this.options.interactive) {
+                    this.initInteraction();
+                }
+
+                this.animate = this.animate.bind(this);
+                requestAnimationFrame(this.animate);
+            }
+
+            resize() {
+                const rect = this.canvas.getBoundingClientRect();
+                const dpr = window.devicePixelRatio || 1;
+                this.width = rect.width;
+                this.height = rect.height;
+                this.canvas.width = this.width * dpr;
+                this.canvas.height = this.height * dpr;
+                this.ctx.scale(dpr, dpr);
+
+                if (this.width < 600) {
+                    this.baseScale = this.width * 0.17;
+                } else {
+                    this.baseScale = Math.min(this.width, this.height) * 0.18;
+                }
+                this.scale = this.baseScale;
+                this.targetScale = this.baseScale;
+            }
+
+            initInteraction() {
+                this.canvas.addEventListener('mousedown', (e) => {
+                    this.isDragging = true;
+                    this.lastMouseX = e.clientX;
+                    this.lastMouseY = e.clientY;
+                });
+
+                window.addEventListener('mousemove', (e) => {
+                    if (!this.isDragging) return;
+                    const dx = e.clientX - this.lastMouseX;
+                    const dy = e.clientY - this.lastMouseY;
+                    this.lastMouseX = e.clientX;
+                    this.lastMouseY = e.clientY;
+
+                    this.mouseSpeedX = dx * 0.008;
+                    this.mouseSpeedY = dy * 0.008;
+                    this.targetRotY += this.mouseSpeedX;
+                    this.targetRotX += this.mouseSpeedY;
+                });
+
+                window.addEventListener('mouseup', () => {
+                    this.isDragging = false;
+                });
+
+                this.canvas.addEventListener('touchstart', (e) => {
+                    if (e.touches.length === 1) {
+                        this.isDragging = true;
+                        this.lastMouseX = e.touches[0].clientX;
+                        this.lastMouseY = e.touches[0].clientY;
+                    }
+                }, { passive: true });
+
+                window.addEventListener('touchmove', (e) => {
+                    if (!this.isDragging || e.touches.length === 0) return;
+                    const dx = e.touches[0].clientX - this.lastMouseX;
+                    const dy = e.touches[0].clientY - this.lastMouseY;
+                    this.lastMouseX = e.touches[0].clientX;
+                    this.lastMouseY = e.touches[0].clientY;
+
+                    this.targetRotY += dx * 0.008;
+                    this.targetRotX += dy * 0.008;
+                }, { passive: true });
+
+                window.addEventListener('touchend', () => {
+                    this.isDragging = false;
+                });
+            }
+
+            updateModel() {
+                this.model = generateJewelryModel(configState.metal, configState.cut, configState.carat);
+            }
+
+            drawSparkle(x, y, size, rotation) {
+                if (size <= 0.5) return;
+                const ctx = this.ctx;
+                ctx.save();
+                ctx.translate(x, y);
+                ctx.rotate(rotation);
+
+                // Halo de dispersion champagne
+                const radGlow = ctx.createRadialGradient(0, 0, 0, 0, 0, size * 1.6);
+                radGlow.addColorStop(0, 'rgba(255, 255, 255, 1)');
+                radGlow.addColorStop(0.3, 'rgba(212, 175, 55, 0.7)');
+                radGlow.addColorStop(0.7, 'rgba(100, 180, 255, 0.3)');
+                radGlow.addColorStop(1, 'rgba(255, 255, 255, 0)');
+                ctx.fillStyle = radGlow;
+                ctx.beginPath();
+                ctx.arc(0, 0, size * 1.6, 0, Math.PI * 2);
+                ctx.fill();
+
+                // Étoile effilée blanche
+                ctx.fillStyle = '#FFFFFF';
+                for (let i = 0; i < 2; i++) {
+                    ctx.rotate(Math.PI / 2);
+                    ctx.beginPath();
+                    ctx.moveTo(-size * 1.7, 0);
+                    ctx.quadraticCurveTo(0, -size * 0.15, size * 1.7, 0);
+                    ctx.quadraticCurveTo(0, size * 0.15, -size * 1.7, 0);
+                    ctx.fill();
+                }
+
+                ctx.restore();
+            }
+
+            render() {
+                const ctx = this.ctx;
+                ctx.clearRect(0, 0, this.width, this.height);
+
+                this.rotX += (this.targetRotX - this.rotX) * 0.08;
+                this.rotY += (this.targetRotY - this.rotY) * 0.08;
+                this.scale += (this.targetScale - this.scale) * 0.08;
+
+                if (!this.isDragging && !this.options.isHero) {
+                    this.targetRotY += 0.0035;
+                }
+
+                const centerX = this.width / 2;
+                const centerY = this.height / 2;
+                const fov = this.options.fov;
+                const cameraDist = 5.5;
+
+                // --- 0. OMBRE DE CONTACT PORTÉE (Crée l'effet physique sur marbre clair) ---
+                const groundY = centerY + 95 * (this.scale / 85);
+                const shadowRadiusX = 110 * (this.scale / 85);
+                const shadowRadiusY = 18 * (this.scale / 85);
+
+                const groundShadow = ctx.createRadialGradient(centerX, groundY, 0, centerX, groundY, shadowRadiusX);
+                groundShadow.addColorStop(0, 'rgba(40, 30, 15, 0.22)');
+                groundShadow.addColorStop(0.4, 'rgba(184, 134, 11, 0.08)');
+                groundShadow.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                ctx.fillStyle = groundShadow;
+                ctx.beginPath();
+                ctx.ellipse(centerX, groundY, shadowRadiusX, shadowRadiusY, 0, 0, Math.PI * 2);
+                ctx.fill();
+
+                // 1. Transformation matricielle des sommets
+                const transformed = [];
+                const projected = [];
+                const verts = this.model.vertices;
+
+                for (let i = 0; i < verts.length; i++) {
+                    let v = verts[i];
+                    v = rotateY(v, this.rotY);
+                    v = rotateX(v, this.rotX);
+                    if (this.rotZ !== 0) v = rotateZ(v, this.rotZ);
+
+                    transformed.push(v);
+
+                    const zCam = v.z + cameraDist;
+                    const projFactor = (fov / (zCam > 0.1 ? zCam : 0.1)) * (this.scale / 100);
+                    const sx = centerX + v.x * projFactor;
+                    const sy = centerY - v.y * projFactor;
+
+                    projected.push({ x: sx, y: sy, z: v.z });
+                }
+
+                // 2. Calcul des normales et tri des faces
+                const faces = this.model.faces;
+                const renderedFaces = [];
+
+                for (let f of faces) {
+                    const idx0 = f.indices[0];
+                    const idx1 = f.indices[1];
+                    const idx2 = f.indices[2];
+
+                    const p0 = projected[idx0];
+                    const p1 = projected[idx1];
+                    const p2 = projected[idx2];
+
+                    const cross2D = (p1.x - p0.x) * (p2.y - p0.y) - (p1.y - p0.y) * (p2.x - p0.x);
+                    if (cross2D <= 0 && !f.isDiamond) continue;
+
+                    const v0 = transformed[idx0];
+                    const v1 = transformed[idx1];
+                    const v2 = transformed[idx2];
+
+                    const e1 = v1.sub(v0);
+                    const e2 = v2.sub(v0);
+                    const normal = e1.cross(e2).normalize();
+                    const avgZ = (v0.z + v1.z + v2.z) / 3;
+
+                    renderedFaces.push({
+                        face: f,
+                        p0, p1, p2,
+                        normal,
+                        avgZ,
+                        cross2D
+                    });
+                }
+
+                renderedFaces.sort((a, b) => a.avgZ - b.avgZ);
+
+                // 3. Dessin des facettes (Ombrage adapté au fond clair)
+                const metalTheme = METAL_THEMES[configState.metal];
+
+                for (let item of renderedFaces) {
+                    const f = item.face;
+                    const normal = item.normal;
+                    const p0 = item.p0;
+                    const p1 = item.p1;
+                    const p2 = item.p2;
+
+                    ctx.beginPath();
+                    ctx.moveTo(p0.x, p0.y);
+                    ctx.lineTo(p1.x, p1.y);
+                    ctx.lineTo(p2.x, p2.y);
+                    ctx.closePath();
+
+                    if (f.isMetal) {
+                        // RENDU DU MÉTAL SUR FOND CLAIR
+                        const dotL = Math.max(0, normal.dot(this.lightDir));
+                        const viewDir = new Vector3(0, 0, 1);
+                        const halfVec = this.lightDir.add(viewDir).normalize();
+                        const spec = Math.pow(Math.max(0, normal.dot(halfVec)), 16);
+
+                        const r = Math.min(255, Math.floor(metalTheme.ambientColor[0] + dotL * (metalTheme.baseColor[0] - metalTheme.ambientColor[0]) + spec * metalTheme.specularColor[0]));
+                        const g = Math.min(255, Math.floor(metalTheme.ambientColor[1] + dotL * (metalTheme.baseColor[1] - metalTheme.ambientColor[1]) + spec * metalTheme.specularColor[1]));
+                        const b = Math.min(255, Math.floor(metalTheme.ambientColor[2] + dotL * (metalTheme.baseColor[2] - metalTheme.ambientColor[2]) + spec * metalTheme.specularColor[2]));
+
+                        ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+                        ctx.fill();
+
+                        // Fin contour pour détacher le métal du fond blanc
+                        ctx.strokeStyle = `rgba(80, 60, 20, 0.12)`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+
+                    } else if (f.isDiamond) {
+                        // RENDU DU DIAMANT SUR FOND CLAIR
+                        const dotL = normal.dot(this.lightDir);
+                        const absDot = Math.abs(dotL);
+                        const isFacing = item.cross2D > 0;
+
+                        // Réfraction avec teinte prismatique azurée et champagne
+                        const tintPhase = (normal.x + normal.y + normal.z) * 3;
+                        const prismR = Math.floor(190 + Math.sin(tintPhase) * 45);
+                        const prismG = Math.floor(220 + Math.cos(tintPhase) * 30);
+                        const prismB = 255;
+
+                        // Sur fond clair, alpha renforcé avec reflet
+                        const alpha = isFacing ? (0.4 + absDot * 0.4) : 0.18;
+                        ctx.fillStyle = `rgba(${prismR}, ${prismG}, ${prismB}, ${alpha})`;
+                        ctx.fill();
+
+                        // Arêtes cristallines fines contrastées
+                        const edgeAlpha = isFacing ? (0.45 + absDot * 0.45) : 0.2;
+                        ctx.strokeStyle = `rgba(70, 95, 130, ${edgeAlpha})`;
+                        ctx.lineWidth = isFacing ? 0.8 : 0.5;
+                        ctx.stroke();
+                    }
+                }
+
+                // 4. Éclats de diamants (Sparkles)
+                const diamondStart = this.model.vertices.length - (this.model.faces.filter(f => f.isDiamond).length > 0 ? 30 : 0);
+                
+                for (let sp of this.sparkles) {
+                    sp.life += sp.speed;
+                    if (sp.life > 1) {
+                        sp.life = 0;
+                        sp.speed = 0.02 + Math.random() * 0.03;
+                        sp.vertexIdx = Math.min(projected.length - 1, Math.max(diamondStart, Math.floor(diamondStart + Math.random() * 25)));
+                        sp.rotation = Math.random() * Math.PI;
+                    }
+
+                    const pt = projected[sp.vertexIdx];
+                    if (pt && pt.z > -0.5) {
+                        const currentSize = Math.sin(sp.life * Math.PI) * sp.maxSize;
+                        this.drawSparkle(pt.x, pt.y, currentSize, sp.rotation + sp.life);
+                    }
+                }
+            }
+
+            animate() {
+                this.render();
+                requestAnimationFrame(this.animate);
+            }
+        }
+
+        // ========================================================
+        // GESTION DU SCROLLYTELLING HERO SECTION
+        // ========================================================
+        let heroRenderer = null;
+        let configRenderer = null;
+
+        function initHeroScrollytelling() {
+            heroRenderer = new JewelryRenderer('hero-canvas', {
+                interactive: false,
+                isHero: true,
+                fov: 520
+            });
+
+            const scrollySection = document.getElementById('scrolly-section');
+            const progressFill = document.getElementById('scroll-progress-fill');
+            const text1 = document.getElementById('scrolly-text-1');
+            const text2 = document.getElementById('scrolly-text-2');
+            const text3 = document.getElementById('scrolly-text-3');
+
+            let mouseTargetX = 0;
+            let mouseTargetY = 0;
+            window.addEventListener('mousemove', (e) => {
+                const normX = (e.clientX / window.innerWidth) - 0.5;
+                const normY = (e.clientY / window.innerHeight) - 0.5;
+                mouseTargetX = normX * 0.35;
+                mouseTargetY = normY * 0.25;
+            });
+
+            function updateScroll() {
+                const rect = scrollySection.getBoundingClientRect();
+                const totalScrollable = scrollySection.offsetHeight - window.innerHeight;
+                let progress = -rect.top / totalScrollable;
+                progress = Math.max(0, Math.min(1, progress));
+
+                if (progressFill) {
+                    progressFill.style.height = `${progress * 100}%`;
+                }
+
+                if (heroRenderer) {
+                    if (progress < 0.35) {
+                        const t = progress / 0.35;
+                        heroRenderer.targetRotX = 0.25 + t * 0.3 + mouseTargetY;
+                        heroRenderer.targetRotY = -0.4 + t * 1.8 + mouseTargetX;
+                        heroRenderer.targetScale = heroRenderer.baseScale * (1.1 + t * 0.2);
+
+                        text1.style.opacity = Math.max(0, 1 - t * 2.5);
+                        text1.style.transform = `translateY(${t * 30}px)`;
+                        text2.style.opacity = '0';
+                        text3.style.opacity = '0';
+
+                    } else if (progress < 0.70) {
+                        const t = (progress - 0.35) / 0.35;
+                        heroRenderer.targetRotX = 0.55 - t * 0.2 + mouseTargetY;
+                        heroRenderer.targetRotY = 1.4 + t * 2.2 + mouseTargetX;
+                        heroRenderer.targetScale = heroRenderer.baseScale * (1.3 + Math.sin(t * Math.PI) * 0.2);
+
+                        text1.style.opacity = '0';
+                        const text2Alpha = Math.sin(t * Math.PI);
+                        text2.style.opacity = `${text2Alpha * 1.3}`;
+                        text2.style.transform = `translateY(${(1 - text2Alpha) * 20}px)`;
+                        text3.style.opacity = '0';
+
+                    } else {
+                        const t = (progress - 0.70) / 0.30;
+                        heroRenderer.targetRotX = 0.35 + t * 0.8 + mouseTargetY;
+                        heroRenderer.targetRotY = 3.6 + t * 1.5 + mouseTargetX;
+                        heroRenderer.targetScale = heroRenderer.baseScale * (1.35 + t * 0.45);
+
+                        text1.style.opacity = '0';
+                        text2.style.opacity = '0';
+                        text3.style.opacity = `${t * 1.2}`;
+                        text3.style.transform = `translateY(${(1 - t) * 25}px)`;
+                    }
+                }
+
+                requestAnimationFrame(updateScroll);
+            }
+
+            requestAnimationFrame(updateScroll);
+        }
+
+        // ========================================================
+        // GESTION DE L'UI DU CONFIGURATEUR ET DU PANIER
+        // ========================================================
+        function initConfiguratorUI() {
+            configRenderer = new JewelryRenderer('config-canvas', {
+                interactive: true,
+                isHero: false,
+                fov: 480
+            });
+
+            const metalBtns = document.querySelectorAll('.metal-btn');
+            const cutBtns = document.querySelectorAll('.cut-btn');
+            const caratBtns = document.querySelectorAll('.carat-btn');
+
+            const labelMetal = document.getElementById('label-selected-metal');
+            const labelCut = document.getElementById('label-selected-cut');
+            const labelCarat = document.getElementById('label-selected-carat');
+            const priceDisplay = document.getElementById('config-price-display');
+            const headerPriceBadge = document.getElementById('header-price-badge');
+            const gemBadge = document.getElementById('current-gem-badge');
+
+            // Panier Drawer Elements
+            const cartDrawer = document.getElementById('cart-drawer');
+            const cartOverlay = document.getElementById('cart-drawer-overlay');
+            const openCartBtn = document.getElementById('open-cart-btn');
+            const closeCartBtn = document.getElementById('close-cart-btn');
+            const addToCartBtn = document.getElementById('add-to-cart-btn');
+            const cartSubtotal = document.getElementById('cart-subtotal');
+            const cartItemPrice = document.getElementById('cart-item-price');
+            const cartMetalName = document.getElementById('cart-metal-name');
+            const cartCutName = document.getElementById('cart-cut-name');
+            const cartCaratName = document.getElementById('cart-carat-name');
+            const cartBadgeCount = document.getElementById('cart-badge-count');
+
+            function updatePrice() {
+                const basePrice = BASE_CARAT_PRICES[configState.carat] || 4800;
+                const metalSurcharge = METAL_THEMES[configState.metal].surcharge;
+                const finalPrice = basePrice + metalSurcharge;
+                configState.calculatedPrice = finalPrice;
+
+                const formatted = finalPrice.toLocaleString('fr-FR') + ' €';
+                priceDisplay.textContent = formatted;
+                headerPriceBadge.textContent = formatted;
+
+                if (cartSubtotal) cartSubtotal.textContent = formatted;
+                if (cartItemPrice) cartItemPrice.textContent = formatted;
+
+                const cutLabels = {
+                    round: "Rond Brillant",
+                    princess: "Princesse",
+                    pear: "Poire"
+                };
+                gemBadge.textContent = `Diamant ${cutLabels[configState.cut]} • ${configState.carat.toFixed(2)} ct`;
+            }
+
+            // 1. Choix Métal
+            metalBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    metalBtns.forEach(b => {
+                        b.classList.remove('active', 'border-gold', 'bg-amber-50/60');
+                        b.classList.add('border-gray-200', 'bg-gray-50/60');
+                    });
+                    btn.classList.add('active', 'border-gold', 'bg-amber-50/60');
+                    btn.classList.remove('border-gray-200', 'bg-gray-50/60');
+
+                    const metal = btn.dataset.metal;
+                    configState.metal = metal;
+                    labelMetal.textContent = METAL_THEMES[metal].name;
+                    cartMetalName.textContent = METAL_THEMES[metal].name;
+
+                    configRenderer.updateModel();
+                    if (heroRenderer) heroRenderer.updateModel();
+                    updatePrice();
+                });
+            });
+
+            // 2. Choix Coupe Diamant
+            cutBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    cutBtns.forEach(b => {
+                        b.classList.remove('active', 'border-gold', 'bg-amber-50/60');
+                        b.classList.add('border-gray-200', 'bg-gray-50/60');
+                    });
+                    btn.classList.add('active', 'border-gold', 'bg-amber-50/60');
+                    btn.classList.remove('border-gray-200', 'bg-gray-50/60');
+
+                    const cut = btn.dataset.cut;
+                    configState.cut = cut;
+
+                    const cutLabels = {
+                        round: "Rond Brillant (57 Facettes)",
+                        princess: "Princesse (Carré Moderne)",
+                        pear: "Poire (Goutte Royale)"
+                    };
+                    labelCut.textContent = cutLabels[cut];
+                    cartCutName.textContent = cutLabels[cut];
+
+                    configRenderer.updateModel();
+                    if (heroRenderer) heroRenderer.updateModel();
+                    updatePrice();
+                });
+            });
+
+            // 3. Choix Caratage
+            caratBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    caratBtns.forEach(b => {
+                        b.classList.remove('active', 'border-gold', 'bg-amber-50/60');
+                        b.classList.add('border-gray-200', 'bg-gray-50/60');
+                        b.querySelector('span:first-child').classList.remove('text-gold');
+                        b.querySelector('span:first-child').classList.add('text-gray-900');
+                    });
+                    btn.classList.add('active', 'border-gold', 'bg-amber-50/60');
+                    btn.classList.remove('border-gray-200', 'bg-gray-50/60');
+                    btn.querySelector('span:first-child').classList.add('text-gold');
+                    btn.querySelector('span:first-child').classList.remove('text-gray-900');
+
+                    const carat = parseFloat(btn.dataset.carat);
+                    configState.carat = carat;
+
+                    const caratDetails = {
+                        0.5: "0.50 Carat (~5.2 mm)",
+                        1.0: "1.00 Carat (~6.5 mm)",
+                        2.0: "2.00 Carat (~8.2 mm)"
+                    };
+                    const selectedCaratText = caratDetails[carat];
+                    labelCarat.textContent = selectedCaratText;
+                    cartCaratName.textContent = `${carat.toFixed(2)} Carat (D-FL)`;
+
+                    configRenderer.updateModel();
+                    if (heroRenderer) heroRenderer.updateModel();
+                    updatePrice();
+                });
+            });
+
+            // Zoom / Reset
+            document.getElementById('btn-zoom-in')?.addEventListener('click', () => {
+                configRenderer.targetScale *= 1.25;
+            });
+            document.getElementById('btn-zoom-out')?.addEventListener('click', () => {
+                configRenderer.targetScale *= 0.8;
+            });
+            document.getElementById('btn-reset-view')?.addEventListener('click', () => {
+                configRenderer.targetRotX = 0.25;
+                configRenderer.targetRotY = -0.4;
+                configRenderer.targetScale = configRenderer.baseScale;
+            });
+
+            // GESTION DU PANIER (DRAWER)
+            function openCart() {
+                cartDrawer.classList.remove('translate-x-full');
+                cartOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                cartOverlay.classList.add('opacity-100');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeCart() {
+                cartDrawer.classList.add('translate-x-full');
+                cartOverlay.classList.remove('opacity-100');
+                cartOverlay.classList.add('opacity-0', 'pointer-events-none');
+                document.body.style.overflow = '';
+            }
+
+            if (openCartBtn) openCartBtn.addEventListener('click', openCart);
+            if (closeCartBtn) closeCartBtn.addEventListener('click', closeCart);
+            if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
+
+            // Bouton supprimer du panier
+            const cartRemoveItemBtn = document.getElementById('cart-remove-item');
+            const cartItemCard = cartRemoveItemBtn?.closest('.bg-gray-50');
+            if (cartRemoveItemBtn && cartItemCard) {
+                cartRemoveItemBtn.addEventListener('click', () => {
+                    cartItemCard.style.opacity = '0.3';
+                    cartItemCard.style.pointerEvents = 'none';
+                    cartBadgeCount.textContent = "0";
+                    headerPriceBadge.textContent = "0 €";
+                    cartSubtotal.textContent = "0 €";
+                    setTimeout(() => {
+                        cartItemCard.classList.add('hidden');
+                    }, 300);
+                });
+            }
+
+            if (addToCartBtn) {
+                addToCartBtn.addEventListener('click', () => {
+                    if (cartItemCard) {
+                        cartItemCard.classList.remove('hidden');
+                        cartItemCard.style.opacity = '1';
+                        cartItemCard.style.pointerEvents = 'auto';
+                    }
+                    updatePrice();
+                    openCart();
+                    cartBadgeCount.textContent = "1";
+                    cartBadgeCount.classList.add('scale-125');
+                    setTimeout(() => cartBadgeCount.classList.remove('scale-125'), 300);
+                });
+            }
+
+            // Recherche interactive avec feedback
+            const searchInput = document.getElementById('site-search-input');
+            if (searchInput) {
+                searchInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        const query = searchInput.value.toLowerCase();
+                        if (query.includes('rose')) {
+                            document.querySelector('[data-metal="rose"]')?.click();
+                        } else if (query.includes('blanc') || query.includes('platine')) {
+                            document.querySelector('[data-metal="white"]')?.click();
+                        } else if (query.includes('princesse')) {
+                            document.querySelector('[data-cut="princess"]')?.click();
+                        } else if (query.includes('poire')) {
+                            document.querySelector('[data-cut="pear"]')?.click();
+                        }
+                        document.getElementById('configurator')?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            }
+
+            updatePrice();
+        }
+
+        // ========================================================
+        // INITIALISATION AU CHARGEMENT DU DOM
+        // ========================================================
+        window.addEventListener('DOMContentLoaded', () => {
+            initHeroScrollytelling();
+            initConfiguratorUI();
+        });
+    </script>
+</body>
+</html>
